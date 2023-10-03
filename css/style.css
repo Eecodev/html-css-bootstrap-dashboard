@@ -1,3 +1,4 @@
+/* GENERAL */
 :root {
 	--color-bg-search-bar: #e5e5e5;
 	--color-bg-body: #f8f9fa;
@@ -12,10 +13,29 @@ body{
     height: 100vh;
     background-color: var(--color-bg-body);
 }
+
+/* HEADER */
 header{
     width: 100%;
     height: 70px;
 }
+.my-row{
+    width: 100%;
+    height: 70px;
+    background-color: var(--color-nav-bar);
+}
+
+/* UTILITIES */
+.d-flex{
+    display: flex;
+}
+.align-center{
+    align-items: center;
+    align-content: center;
+}
+/* ICONS */
+
+/* MAIN */
 main{
     width: 100%;
     height: calc(100% - 70px);
@@ -25,6 +45,7 @@ main{
     width: 150px;
     height: 100%;
     background-color: var(--color-side-bar);
+    color: var(--color-bg-body);
     background-image: url('../img/sidebar-bg.png');
 }
 #main-content{
