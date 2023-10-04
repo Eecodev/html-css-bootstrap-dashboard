@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <title>Bootstrap Dashboard</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="wrapper">
@@ -20,21 +20,19 @@
                         <img src="img/mobile-logo.png" alt="logo" class="d-lg-none">
                     </div>
                     <div class="col search">
-                        <div>
-                           <i class="fa-solid fa-magnifying-glass"></i> 
-                        </div>
+                        <i class="fa-solid fa-magnifying-glass"></i>
                         <input type="search" class="form-control search-bar">
                     </div>
                     <div class="col-auto">
                         <ul class="list-group list-group-horizontal border-0">
                             <li class="list-group-item border-0 d-none d-lg-block">
-                                <i class="fa-solid fa-bell"></i>
-                            </li>
-                            <li class="list-group-item border-0 d-none d-lg-block">
                                 <i class="fa-solid fa-list"></i>
                             </li>
                             <li class="list-group-item border-0 d-none d-lg-block">
-                                <i class="fa-solid fa-bell"></i>
+                                <i class="fa-solid fa-circle-question"></i>
+                            </li>
+                            <li class="list-group-item border-0 d-none d-lg-block">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
                             </li>
                             <li class="list-group-item border-0 d-none d-lg-block">
                                 <i class="fa-solid fa-bell"></i>
@@ -51,9 +49,9 @@
             <!-- SIDEBAR -->
             <div id="sidebar" class="d-flex flex-column justify-content-between border p-3">
                 <ul id="sb-top" class="list-unstyled">
-                    <li class="p-1"><i class="fa-solid fa-house p-2"></i><span>Home</span></li>
-                    <li class="p-1"><i class="fa-solid fa-chart-simple p-2"></i><span>Stats</span></li>
-                    <li class="p-1"><i class="fa-solid fa-signal p-2"></i><span>Signal</span></li>
+                    <li class="p-1 d-inline-block"><i class="fa-solid fa-house p-2 d-inline-block"></i><span>Home</span></li>
+                    <li class="p-1 d-inline-block"><i class="fa-solid fa-chart-simple p-2 d-inline-block"></i><span>Stats</span></li>
+                    <li class="p-1 d-inline-block"><i class="fa-solid fa-signal p-2 d-inline-block"></i><span>Signal</span></li>
                 </ul>
                 <ul id="sb-bottom" class="list-unstyled">
                     <li class="p-1"><i class="fa-solid fa-gear p-2"></i><span>Admin</span></li>
@@ -66,7 +64,8 @@
                 <div class="container-fluid bg-primary text-white">
                     <div class="row justify-content-between align-content-center flex-lg-row-reverse">
                         <div class="col m-2">
-                            <p></i>Nuovo Studente <i class="fa-regular fa-square-plus"></i></p>
+                            <p class="d-inline-block"></i>Nuovo Studente</p>
+                            <i class="fa-regular fa-square-plus d-inline-block"></i>
                         </div>
                         <div class="col m-2">
                             <p>Studenti online negli utlimi 30 minuti</p>
@@ -94,6 +93,7 @@
                                             <th scope="col">First</th>
                                             <th scope="col">Last</th>
                                             <th scope="col">Handle</th>
+                                            <th scope="col">Actions</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -216,6 +216,14 @@
                             </div>
                             <div class="card">
                                 <img src="img/stats.jpeg" alt="">
+                                <h3 class="ps-4">Utenti attivi</h3>
+                                <p class="ps-4">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item p-4">Gennaio: 1200</li>
+                                    <li class="list-group-item p-4">Febbraio: 800</li>
+                                    <li class="list-group-item p-4">Marzo: 1500</li>
+                                </ul>
+                                <a href="#" class="p-4">Visualizza report approfondito</a>
                             </div>
                         </div>
                     </div>

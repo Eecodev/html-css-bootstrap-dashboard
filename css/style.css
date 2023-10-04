@@ -27,7 +27,7 @@ header img{
     position: relative;
 }
 .search-bar{
-    padding-left: 20px;
+    padding-left: 30px;
 }
 /* UTILITIES */
 .d-flex{
@@ -42,6 +42,12 @@ header img{
     position: absolute;
     top: 10px;
     left: 20px;
+}
+.fa-bell{
+    color: orange;
+}
+.fa-square-plus{
+    font-size: 25px;
 }
 /* MAIN */
 main{
