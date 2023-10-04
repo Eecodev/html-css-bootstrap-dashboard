@@ -26,6 +26,9 @@ header img{
 .search{
     position: relative;
 }
+.search-bar{
+    padding-left: 20px;
+}
 /* UTILITIES */
 .d-flex{
     display: flex;
