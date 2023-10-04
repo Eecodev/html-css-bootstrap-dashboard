@@ -12,19 +12,19 @@
     <div class="wrapper">
 
         <!-- HEADER -->
-        <header class="border">
+        <header class="d-flex align-items-center">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col border">
+                    <div class="d-flex align-items-center col-auto border">
                         <img src="img/logo.svg" alt="logo">
                     </div>
                     <div class="col border">
                         <div class="form-outline">
-                            <i class="fa fa-search"></i>
+                            <!-- <i class="fa fa-search"></i> -->
                             <input type="text" class="form-control" placeholder="Prova a cercare: Lezioni di Laravel">
                         </div>
                     </div>
-                    <div class="col border">
+                    <div class="col-auto border">
                         3
                     </div>
                 </div>
@@ -36,11 +36,14 @@
         <main class="border">
 
             <!-- SIDEBAR -->
-            <div id="sidebar" class="border">
-                <ul id="menu">
-                    <li class="d-flex align-center" class=""><i class="fa-solid fa-house"></i>Home</li>
-                    <li class="d-flex align-center" class=""><i class="fa-solid fa-chart-simple"></i>Stats</li>
-                    <li class="d-flex align-center" class=""><i class="fa-solid fa-signal"></i>Signal</li>
+            <div id="sidebar" class="d-flex flex-column justify-content-between border p-3">
+                <ul id="menu" class="list-unstyled">
+                    <li class="p-1"><i class="fa-solid fa-house p-2"></i><span>Home</span></li>
+                    <li class="p-1"><i class="fa-solid fa-chart-simple p-2"></i><span>Stats</span></li>
+                    <li class="p-1"><i class="fa-solid fa-signal p-2"></i><span>Signal</span></li>
+                </ul>
+                <ul class="list-unstyled">
+                    <li class="p-1"><i class="fa-solid fa-gear p-2"></i><span>Admin</span></li>
                 </ul>
             </div>
 
@@ -56,6 +59,7 @@
                 </div>
 
                 <div class="container-fluid">
+
                     <!-- DASHBOARD -->
                     <div id="dashboard" class="row">
                          <div class="col-12 col-lg-8 border">

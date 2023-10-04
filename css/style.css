@@ -29,21 +29,26 @@ header{
     align-content: center;
 }
 /* ICONS */
-
 /* MAIN */
 main{
     width: 100%;
     height: calc(100% - 50px);
     display: flex;
+    flex-flow: row nowrap;
 }
 #sidebar{
-    width: 150px;
-    height: 100%;
+    /* width: 150px;
+    height: 100%; */
     background-color: var(--color-side-bar);
     color: var(--color-bg-body);
     background-image: url('../img/sidebar-bg.png');
 }
 #main-content{
-    width: calc(100% - 150px);
+    flex-grow: 1;
+    /* width: calc(100% - 150px); */
     overflow-y: auto;
+}
+header img{
+    height: 50px;
+    display: block;
 }
